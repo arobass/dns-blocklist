@@ -4,8 +4,11 @@ $urls = Get-Content "$PSScriptRoot/adlist.txt"
 # Create a new directory
 New-Item -Path "$PSScriptRoot" -Name "adlists" -ItemType "directory" -Force | Out-Null
 
+# Get CPU Cores
+$cpu_cores = (Get-CIMInstance -Class 'CIM_Processor').NumberOfLogicalProcessors
+
 # Check that each DNS blocklist is available, if yes, create a file with the list contents
-$urls | foreach-object -parallel {
+$urls | ForEach-Object -ThrottleLimit $cpu_cores -parallel {
     ${PSScriptRoot} = $using:PSScriptRoot
     Invoke-WebRequest -Uri $_ -OutFile ( New-Item -Path "$PSScriptRoot/adlists/$($_.ReadCount).txt" -Force ) -UseBasicParsing -SkipCertificateCheck -SkipHttpErrorCheck -TimeoutSec 10
 }
