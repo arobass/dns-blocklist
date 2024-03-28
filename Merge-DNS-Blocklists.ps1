@@ -5,7 +5,8 @@ $urls = Get-Content "$PSScriptRoot/adlist.txt"
 New-Item -Path "$PSScriptRoot" -Name "adlists" -ItemType "directory" -Force | Out-Null
 
 # Get CPU Cores
-$cpu_cores = (Get-CIMInstance -Class 'CIM_Processor').NumberOfLogicalProcessors
+#$cpu_cores = (Get-CIMInstance -Class 'CIM_Processor').NumberOfLogicalProcessors
+$cpu_cores = (cat /proc/cpuinfo | grep processor | wc -l)
 
 # Check that each DNS blocklist is available, if yes, create a file with the list contents
 $urls | ForEach-Object -ThrottleLimit $cpu_cores -parallel {
