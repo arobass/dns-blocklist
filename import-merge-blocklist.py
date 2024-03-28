@@ -1,3 +1,26 @@
+import importlib.util
+import subprocess
+import sys
+
+# List of required modules
+required_modules = ['multiprocessing', 'requests', 'warnings']
+
+# Function to check if a module is installed
+def is_module_installed(module_name):
+    spec = importlib.util.find_spec(module_name)
+    return spec is not None
+
+# Function to install missing modules
+def install_missing_modules():
+    for module in required_modules:
+        if not is_module_installed(module):
+            print(f"Installing {module}...")
+            subprocess.run([sys.executable, "-m", "pip", "install", module])
+
+# Install missing modules
+install_missing_modules()
+
+# Now that all required modules are installed, import them and run the main script
 import multiprocessing
 import requests
 import re
