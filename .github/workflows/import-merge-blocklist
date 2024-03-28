@@ -28,4 +28,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Execute py script
         shell: python
-        run: python Merge-DNS-Blocklists.py
+        run: python import-merge-blocklist.py
