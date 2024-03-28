@@ -1,7 +1,6 @@
 import importlib.util
 import subprocess
 import sys
-import os
 
 # List of required modules
 required_modules = ['multiprocessing', 'requests', 'warnings']
@@ -91,10 +90,3 @@ if __name__ == "__main__":
         pass
     # Run the main script
     main(input_filename, output_filename)
-
-    # Add and commit the output file to the Git repository
-    os.system('git add output_processed_urls.txt')
-    os.system('git commit -m "Add processed URLs"')
-
-    # Push the changes to the remote repository
-    os.system('git push')
