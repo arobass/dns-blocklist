@@ -1,6 +1,7 @@
 import importlib.util
 import subprocess
 import sys
+import os
 
 # List of required modules
 required_modules = ['multiprocessing', 'requests', 'warnings']
