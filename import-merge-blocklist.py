@@ -34,7 +34,7 @@ def get_cpu_cores():
     except NotImplementedError:
         return 1
 
-def process_url(url, output_filename):
+def process_url(url, output_filename, error_filename='lists-errors.txt'):
     """Process a single URL."""
     try:
         # Make a request to the URL with a timeout of 10 seconds
@@ -49,12 +49,20 @@ def process_url(url, output_filename):
             with open(output_filename, 'a', encoding='utf-8') as file:
                 for line in content:
                     file.write(line + '\n')
-    # Catch timeout exceptions as warnings
+        else:
+            # Log non-200 status codes as errors
+            with open(error_filename, 'a', encoding='utf-8') as error_file:
+                error_file.write(f"HTTP Error {response.status_code} for URL: {url}\n")
+    # Catch timeout exceptions and log them
     except requests.Timeout as e:
         warnings.warn(f"Timeout occurred for URL {url}: {e}", Warning)
-    # Catch other exceptions and print them
+        with open(error_filename, 'a', encoding='utf-8') as error_file:
+            error_file.write(f"Timeout Error for URL: {url}\nError: {str(e)}\n\n")
+    # Catch other exceptions and log them
     except Exception as e:
         print(f"Error processing URL {url}: {e}")
+        with open(error_filename, 'a', encoding='utf-8') as error_file:
+            error_file.write(f"Error for URL: {url}\nError: {str(e)}\n\n")
 
 def main(input_filename, output_filename):
     """Main function to process URLs."""
@@ -76,8 +84,27 @@ def main(input_filename, output_filename):
         # Close the pool and wait for all tasks to complete
         pool.close()
         pool.join()
+
+        # Remove duplicates from the merged file
+        print("Removing duplicate entries from the merged file...")
+        with open(output_filename, 'r', encoding='utf-8') as file:
+            lines = file.readlines()
         
-        print("URLs processed successfully.")
+        # Remove duplicates while preserving order
+        unique_lines = []
+        seen = set()
+        for line in lines:
+            line = line.strip()
+            if line and line not in seen:
+                seen.add(line)
+                unique_lines.append(line)
+
+        # Write back the deduplicated content
+        with open(output_filename, 'w', encoding='utf-8') as file:
+            for line in unique_lines:
+                file.write(line + '\n')
+        
+        print(f"URLs processed successfully. {len(lines) - len(unique_lines)} duplicate entries removed.")
         
     except Exception as e:
         print(f"Error: {e}")
@@ -85,8 +112,10 @@ def main(input_filename, output_filename):
 if __name__ == "__main__":
     input_filename = "adlist.txt"  # Input file name
     output_filename = "merged-dns-blocklist.txt"  # Output file name
-    # Ensure the output file is overwritten each time
+    # Ensure both output and error files are overwritten each time
     with open(output_filename, 'w', encoding='utf-8'):
+        pass
+    with open('lists-errors.txt', 'w', encoding='utf-8'):
         pass
     # Run the main script
     main(input_filename, output_filename)
