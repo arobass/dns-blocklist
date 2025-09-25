@@ -77,3 +77,8 @@ https://www.github.developerdan.com/hosts/lists/tracking-aggressive-extended.txt
 https://www.malwaredomainlist.com/hostslist/hosts.txt
 https://www.stopforumspam.com/downloads/toxic_domains_whole.txt
 https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser
+https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/domains/tif.txt
+https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt
+https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/fake.txt
+https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext
+https://big.oisd.nl
