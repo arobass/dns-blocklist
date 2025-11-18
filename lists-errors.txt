@@ -1,1 +1,4 @@
 HTTP Error 403 for URL: https://adblock.mahakala.is
+HTTP Error 500 for URL: https://phishing.army/download/phishing_army_blocklist_extended.txt
+HTTP Error 500 for URL: https://v.firebog.net/hosts/Prigent-Ads.txt
+HTTP Error 500 for URL: https://v.firebog.net/hosts/Prigent-Malware.txt
