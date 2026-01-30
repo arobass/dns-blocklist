@@ -1,4 +1,1 @@
 HTTP Error 403 for URL: https://adblock.mahakala.is
-Error for URL: https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext
-Error: HTTPSConnectionPool(host='pgl.yoyo.org', port=443): Max retries exceeded with url: /adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext (Caused by NameResolutionError("HTTPSConnection(host='pgl.yoyo.org', port=443): Failed to resolve 'pgl.yoyo.org' ([Errno -3] Temporary failure in name resolution)"))
-
