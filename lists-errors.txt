@@ -1,4 +1,1 @@
 HTTP Error 403 for URL: https://adblock.mahakala.is
-Error for URL: https://winhelp2002.mvps.org/hosts.txt
-Error: HTTPSConnectionPool(host='winhelp2002.mvps.org', port=443): Max retries exceeded with url: /hosts.txt (Caused by NameResolutionError("HTTPSConnection(host='winhelp2002.mvps.org', port=443): Failed to resolve 'winhelp2002.mvps.org' ([Errno -3] Temporary failure in name resolution)"))
-
