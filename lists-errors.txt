@@ -1,3 +1,1 @@
-Timeout Error for URL: https://adblock.mahakala.is
-Error: HTTPSConnectionPool(host='adblock.mahakala.is', port=443): Read timed out. (read timeout=10)
-
+HTTP Error 403 for URL: https://adblock.mahakala.is
