@@ -1,1 +1,4 @@
 HTTP Error 403 for URL: https://adblock.mahakala.is
+Timeout Error for URL: https://phishing.army/download/phishing_army_blocklist_extended.txt
+Error: HTTPSConnectionPool(host='phishing.army', port=443): Read timed out. (read timeout=10)
+
