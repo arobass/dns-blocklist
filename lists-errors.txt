@@ -1,2 +1,1 @@
 HTTP Error 403 for URL: https://adblock.mahakala.is
-HTTP Error 500 for URL: https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext
