@@ -1,4 +1,4 @@
 HTTP Error 403 for URL: https://adblock.mahakala.is
 Error for URL: https://big.oisd.nl
-Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
 
