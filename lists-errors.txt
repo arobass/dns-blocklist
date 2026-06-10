@@ -1,4 +1,1 @@
 HTTP Error 403 for URL: https://adblock.mahakala.is
-Timeout Error for URL: https://abpvn.com/android/abpvn.txt
-Error: HTTPSConnectionPool(host='abpvn.com', port=443): Read timed out. (read timeout=10)
-
