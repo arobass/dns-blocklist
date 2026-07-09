@@ -1,2 +1,4 @@
 HTTP Error 403 for URL: https://adblock.mahakala.is
+HTTP Error 429 for URL: https://raw.githubusercontent.com/hectorm/hmirror/master/data/pgl.yoyo.org/list.txt
 HTTP Error 404 for URL: https://raw.githubusercontent.com/vokins/yhosts/master/hosts
+HTTP Error 429 for URL: https://raw.githubusercontent.com/hectorm/hmirror/master/data/winhelp2002.mvps.org/list.txt
