@@ -1,5 +1,5 @@
 HTTP Error 403 for URL: https://adblock.mahakala.is
 HTTP Error 404 for URL: https://raw.githubusercontent.com/vokins/yhosts/master/hosts
-Timeout Error for URL: https://raw.githubusercontent.com/hectorm/hmirror/master/data/stevenblack/list.txt
+Timeout Error for URL: https://raw.githubusercontent.com/hectorm/hmirror/master/data/fademind-add.dead/list.txt
 Error: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out. (read timeout=10)
 
