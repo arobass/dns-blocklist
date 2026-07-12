@@ -1,5 +1,5 @@
 HTTP Error 403 for URL: https://adblock.mahakala.is
 HTTP Error 404 for URL: https://raw.githubusercontent.com/vokins/yhosts/master/hosts
-Timeout Error for URL: https://raw.githubusercontent.com/hectorm/hmirror/master/data/fademind-add.dead/list.txt
-Error: HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out. (read timeout=10)
+Error for URL: https://big.oisd.nl
+Error: HTTPSConnectionPool(host='big.oisd.nl', port=443): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPSConnection(host='big.oisd.nl', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
 
