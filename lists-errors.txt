@@ -1,2 +1,5 @@
 HTTP Error 403 for URL: https://adblock.mahakala.is
+Error for URL: https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV-AGH.txt
+Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
 HTTP Error 403 for URL: https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/domains/tif.txt
