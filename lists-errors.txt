@@ -1,23 +1,2 @@
-Error for URL: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-
 HTTP Error 403 for URL: https://adblock.mahakala.is
-Error for URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GameConsoleAdblockList.txt
-Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-
-Error for URL: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/YouTubeEvenMorePureVideoExperience.txt
-Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-
-Error for URL: https://raw.githubusercontent.com/hectorm/hmirror/master/data/anudeepnd-adservers/list.txt
-Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-
-Error for URL: https://raw.githubusercontent.com/hectorm/hmirror/master/data/fademind-add.2o7net/list.txt
-Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-
-Error for URL: https://raw.githubusercontent.com/hectorm/hmirror/master/data/fademind-add.dead/list.txt
-Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-
-Error for URL: https://raw.githubusercontent.com/hectorm/hmirror/master/data/spam404.com/list.txt
-Error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
-
 HTTP Error 403 for URL: https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/domains/tif.txt
