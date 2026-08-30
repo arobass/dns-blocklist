@@ -1,2 +1,5 @@
 HTTP Error 403 for URL: https://adblock.mahakala.is
 HTTP Error 403 for URL: https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/domains/tif.txt
+Timeout Error for URL: https://winhelp2002.mvps.org/hosts.txt
+Error: HTTPSConnectionPool(host='winhelp2002.mvps.org', port=443): Max retries exceeded with url: /hosts.txt (Caused by ConnectTimeoutError(<HTTPSConnection(host='winhelp2002.mvps.org', port=443) at 0x7f6d433c78e0>, 'Connection to winhelp2002.mvps.org timed out. (connect timeout=10)'))
+
