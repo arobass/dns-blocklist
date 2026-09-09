@@ -1,5 +1,5 @@
 HTTP Error 403 for URL: https://adblock.mahakala.is
 HTTP Error 403 for URL: https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/domains/tif.txt
-Timeout Error for URL: https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt
-Error: HTTPSConnectionPool(host='gitlab.com', port=443): Read timed out. (read timeout=10)
+Timeout Error for URL: https://v.firebog.net/hosts/Easylist.txt
+Error: HTTPSConnectionPool(host='v.firebog.net', port=443): Read timed out. (read timeout=10)
 
