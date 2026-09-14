@@ -71,3 +71,5 @@ https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/pro.txt
 https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/fake.txt
 https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext
 https://big.oisd.nl
+https://raw.githubusercontent.com/bitwire-it/ipblocklist/refs/heads/main/inbound.txt
+https://raw.githubusercontent.com/bitwire-it/ipblocklist/refs/heads/main/outbound.txt
